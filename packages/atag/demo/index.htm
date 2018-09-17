@@ -45,6 +45,8 @@
       <a-text style="color: blue">
         <a-text style="color: green">Hello Atag</a-text>, Hello World
       </a-text>
+      <a-text style="line-height: 10px; font-size: 12px;">line-height: 10px; font-size: 12px; line-height: 10px; font-size: 12px; line-height: 10px; font-size: 12px; line-height: 10px; font-size: 12px;</a-text>
+      <a-text style="line-height: 18px; font-size: 20px;">line-height: 18px; font-size: 20px; line-height: 18px; font-size: 20px;</a-text>
     </div>
   </div>
 
@@ -65,7 +67,7 @@
   <div class="card">
     <h4 class="title">a-image</h4>
     <div class="demo">
-      <a-image style="width: 300px; border: 1px solid #e5e5e5;" src="https://techcrunch.com/wp-content/uploads/2014/06/babygif.gif" />
+      <a-image mode="aspectFit" style="width: 300px;height: 300px; border: 1px solid #e5e5e5;" src="https://techcrunch.com/wp-content/uploads/2014/06/babygif.gif" />
     </div>
   </div>
 
@@ -89,7 +91,7 @@
   <div class="card">
     <h4 class="title">a-textarea</h4>
     <div class="demo">
-      <a-textarea auto-height=true class="textarea" placeholder="textarea placeholder" auto-focus=true></a-textarea>
+      <a-textarea auto-height=true class="textarea" placeholder="textarea placeholder" focus=true></a-textarea>
     </div>
   </div>
 
@@ -273,6 +275,18 @@
           <a-view value="31">31日</a-view>
         </a-picker-view-column>
       </a-picker-view>
+    </div>
+  </div>
+  <div class="card">
+    <h4 class="title">a-scroll-view</h4>
+    <div class="demo">
+      <a-scroll-view scroll-y="true" class="scroll-view" scroll-into-view="red" style="height: 50px;"
+        scroll-with-animation>
+        <a-view id="blue" style="background: #24b0fc;width: 100%;height: 50px;color: #fff;"></a-view>
+        <a-view id="red" style="background: #f56264;width: 100%;height: 50px;color: #fff;"></a-view>
+        <a-view id="green" style="background: #1fb822;width: 100%;height: 50px;color: #fff;"></a-view>
+        <a-view id="yellow" style="background: #F0E68C;width: 100%;height: 50px;color: #fff;"></a-view>
+      </a-scroll-view>
     </div>
   </div>
 </body>
