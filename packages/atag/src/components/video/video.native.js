@@ -40,7 +40,7 @@ export default class VideoElement extends PolymerElement {
         type: Boolean,
         value: false,
       },
-      objectFit: {
+      objectfit: {
         type: String,
         value: 'contain',
       }
@@ -93,7 +93,7 @@ export default class VideoElement extends PolymerElement {
     // String（contain：包含，fill：填充，cover：覆盖）
     const objectFit = this._objectFitParamEl = VideoElement.createParamTag(
       'objectFit',
-      this.objectFit
+      this.objectfit
     );
 
     const bridgeId = VideoElement.createParamTag(
@@ -192,7 +192,7 @@ export default class VideoElement extends PolymerElement {
       this.callNativeControl('play', {
         videoUrl: this.src,
         isLoop: this.loop,
-        objectFit: this.objectFit
+        objectFit: this.objectfit
       });
     } else {
       console.warn('Play status params el not exists');
